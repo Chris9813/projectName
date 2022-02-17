@@ -7,7 +7,7 @@ export const DashboardRoutes = () => {
   return (
     <>
       <NavBar />
-      <div className="container">
+      <div>
         <Routes>
           <Route path="home" element={<HomeScreen />} />
           <Route path="gestion" element={<GestionDirectorioScreen />} />

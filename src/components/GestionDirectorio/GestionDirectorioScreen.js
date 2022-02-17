@@ -6,20 +6,31 @@ import { ToolBarGridView } from "./ToolBarGridView";
 export const GestionDirectorioScreen = () => {
   return (
     <>
-      <h1>GestionDirectorioScreen</h1>
-      <div>
+      <div className="">
         <div>
-          <PanelVistaArbol />
+          <nav className="sidebar d-flex justify-content-start">
+            <PanelVistaArbol />
+          </nav>
         </div>
-        <div>
+
+        <section className="p-4 my-container">
           <div>
             <ToolBarGridView />
           </div>
           <div>
             <GridView />
           </div>
-        </div>
+        </section>
       </div>
     </>
   );
 };
+
+{
+  /*
+
+
+
+
+  */
+}

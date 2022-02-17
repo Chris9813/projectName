@@ -43,12 +43,12 @@ export const NavBar = () => {
                   >
                     <li>
                       <a class="dropdown-item" href="#">
-                        Action
+                        Nombre: Jesse White
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="#">
-                        Another action
+                        Ultima conexión: 17/02/2022
                       </a>
                     </li>
                     <li>
@@ -56,8 +56,13 @@ export const NavBar = () => {
                     </li>
                     <li>
                       <a class="dropdown-item" href="#">
-                        Something else here
+                        Fecha de expiracion de contraseña: 17/03/22
                       </a>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          Cerrar sesion
+                        </a>
+                      </li>
                     </li>
                   </ul>
                 </li>

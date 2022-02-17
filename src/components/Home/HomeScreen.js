@@ -8,9 +8,9 @@ export const HomeScreen = () => {
   };
 
   return (
-    <>
+    <div className="container">
       <h1>HomeScreen</h1>
       <button onClick={handleStation}>File Station</button>
-    </>
+    </div>
   );
 };

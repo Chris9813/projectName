@@ -32,3 +32,19 @@
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
 }
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  background-color: #21252b;
+  transition: 0.4s;
+}
+
+.my-container {
+  margin-left: 15rem;
+}
+
+/* for navbar */
+
+/* for main section */
