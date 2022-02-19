@@ -25,12 +25,3 @@ export const GestionDirectorioScreen = () => {
     </>
   );
 };
-
-{
-  /*
-
-
-
-
-  */
-}

@@ -1,39 +1,11 @@
 import React, { useRef, useState } from "react";
-import useContextMenu from "contextmenu";
 import { ContextMenu, MenuItem, ContextMenuTrigger } from "react-contextmenu";
-import "contextmenu/ContextMenu.css";
 import { Treebeard } from "react-treebeard";
-import "@szhsin/react-menu/dist/core.css";
-
-const directory = {
-  name: "root",
-  toggled: true,
-  children: [
-    {
-      name: "parent",
-      children: [{ name: "child1" }, { name: "child2" }],
-    },
-    {
-      name: "loading parent",
-      loading: true,
-      children: [],
-    },
-    {
-      name: "parent",
-      children: [
-        {
-          name: "nested parent",
-          children: [{ name: "nested child 1" }, { name: "nested child 2" }],
-        },
-      ],
-    },
-  ],
-};
+import { directory } from "../../helpers/directory";
 
 export const PanelVistaArbol = () => {
   const [data, setData] = useState(directory);
   const [cursor, setCursor] = useState(false);
-  const [contextMenu, useCM] = useContextMenu();
 
   const onToggle = (node, toggled) => {
     setCursor(node);

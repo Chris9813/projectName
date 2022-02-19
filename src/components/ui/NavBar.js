@@ -1,7 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { logout } from "../../actions/auth";
 
 export const NavBar = () => {
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(logout());
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -36,17 +44,12 @@ export const NavBar = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Dropdown
+                    Jesse White
                   </a>
                   <ul
                     class="dropdown-menu"
                     aria-labelledby="offcanvasNavbarDropdown"
                   >
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        Nombre: Jesse White
-                      </a>
-                    </li>
                     <li>
                       <a class="dropdown-item" href="#">
                         Ultima conexión: 17/02/2022
@@ -60,7 +63,7 @@ export const NavBar = () => {
                         Fecha de expiracion de contraseña: 17/03/22
                       </a>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="#" onClick={handleClick}>
                           Cerrar sesion
                         </a>
                       </li>
