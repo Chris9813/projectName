@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import { ContextMenu, MenuItem, ContextMenuTrigger } from "react-contextmenu";
 import { Treebeard } from "react-treebeard";
-<<<<<<< HEAD
 import {
   Modal,
   ModalHeader,
@@ -36,9 +35,6 @@ const directory = {
     },
   ],
 };
-=======
-import { directory } from "../../helpers/directory";
->>>>>>> 8a1e4453674ac4cb83c476f89610251308b6a269
 
 export const PanelVistaArbol = () => {
   const [data, setData] = useState(directory);
@@ -60,16 +56,10 @@ export const PanelVistaArbol = () => {
     if (node.children) {
       node.toggled = toggled;
     }
-<<<<<<< HEAD
-=======
-
-    setCursor(node);
->>>>>>> 8a1e4453674ac4cb83c476f89610251308b6a269
     setData(Object.assign({}, data));
     setCursor(node);
   };
 
-<<<<<<< HEAD
   var valorCopiar;
 
   var copiaObjeto;
@@ -139,16 +129,6 @@ export const PanelVistaArbol = () => {
     console.log(data);
   };
 
-=======
-  function handleClick(e, data) {
-    const nameItem = data.target.innerHTML;
-    //var element = document.querySelector(data.target);
-    console.log(nameItem);
-    console.log(data.target);
-    //.__reactEventHandlers$f6wpoyzd59
-  }
-
->>>>>>> 8a1e4453674ac4cb83c476f89610251308b6a269
   const copy = (e) => {
     console.log(cursor);
   };
@@ -159,7 +139,6 @@ export const PanelVistaArbol = () => {
     "Añadir a favoritos": () => console.log("Crear carpeta"),
     Propiedades: () => console.log("Crear carpeta"),
   };
-<<<<<<< HEAD
   const decorators = {
     Toggle: (props) => {
       return (
@@ -171,8 +150,6 @@ export const PanelVistaArbol = () => {
       );
     },
   };
-=======
->>>>>>> 8a1e4453674ac4cb83c476f89610251308b6a269
 
   return (
     <div>
@@ -180,11 +157,7 @@ export const PanelVistaArbol = () => {
       {/* NOTICE: inside the pair, <ContextMenuTrigger> and <ContextMenu> must have the same id */}
 
       <ContextMenuTrigger id="same_unique_identifier">
-<<<<<<< HEAD
         <Treebeard className="toggle" data={data} onToggle={onToggle} />
-=======
-        <Treebeard data={data} onToggle={onToggle} />
->>>>>>> 8a1e4453674ac4cb83c476f89610251308b6a269
       </ContextMenuTrigger>
 
       <ContextMenu id="same_unique_identifier">
@@ -195,11 +168,7 @@ export const PanelVistaArbol = () => {
         >
           Copiar
         </MenuItem>
-<<<<<<< HEAD
         <MenuItem data={{ foo: "bar" }} onClick={handleCrear}>
-=======
-        <MenuItem data={{ foo: "bar" }} onClick={handleClick}>
->>>>>>> 8a1e4453674ac4cb83c476f89610251308b6a269
           Crear carpeta
         </MenuItem>
         <MenuItem data={{ foo: "bar" }} onClick={handleClick}>
@@ -208,7 +177,6 @@ export const PanelVistaArbol = () => {
         <MenuItem data={{ foo: "bar" }} onClick={handleClick}>
           Propiedades
         </MenuItem>
-<<<<<<< HEAD
 
         <MenuItem className="pegar" data={{ foo: "bar" }} onClick={clickPegar}>
           Pegar
@@ -234,9 +202,6 @@ export const PanelVistaArbol = () => {
           <Button onClick={() => setAbierto(false)}>Cerrar</Button>
         </ModalFooter>
       </Modal>
-=======
-      </ContextMenu>
->>>>>>> 8a1e4453674ac4cb83c476f89610251308b6a269
     </div>
   );
 };
