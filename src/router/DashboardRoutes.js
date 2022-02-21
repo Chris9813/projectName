@@ -1,3 +1,4 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { GestionDirectorioScreen } from "../components/GestionDirectorio/GestionDirectorioScreen";
 import { HomeScreen } from "../components/Home/HomeScreen";
