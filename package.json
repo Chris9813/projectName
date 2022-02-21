@@ -16,7 +16,10 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-treebeard": "^3.2.4",
+<<<<<<< HEAD
     "reactstrap": "^9.0.1",
+=======
+>>>>>>> 8a1e4453674ac4cb83c476f89610251308b6a269
     "redux": "^4.1.2",
     "redux-thunk": "^2.4.1",
     "sweetalert2": "^11.4.0",
